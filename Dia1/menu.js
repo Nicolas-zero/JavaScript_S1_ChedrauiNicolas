@@ -1,3 +1,4 @@
+window.location.href
 alert("Bienvenido a Campuslands")
 const option= prompt(
 "¿Con quien qieres iniciar sesion?\n"+
@@ -10,8 +11,11 @@ switch(option) {
         alert("Bienvenido Camper")
          option= prompt(
             "¿que deseas hacer?\n"+
+
             "1. Ver informacion\n"+
+
             "2. Ver ruta de entrenamiento\n"
+
          )
 
         
