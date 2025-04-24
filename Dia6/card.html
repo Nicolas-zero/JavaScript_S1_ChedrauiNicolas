@@ -1,24 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles/card.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blackjack</title>
+  <link rel="stylesheet" href="./styles/card.css" />
+  <script src="./script/card.js"></script>
 </head>
-<body bgcolor="#2d8031">
-   
-    <div id="menu-inicio">
-        <!-- Contenido del menú -->
-        <div class="Logo">
-            <img class="img" src="./logo.png" alt="">
-        </div>
-        <div class="botones">
-            <button class="jugar" >JUGAR</button>
-            <button class="ayuda" >AYUDA</button>
-        </div>   
-    
+<body onload="showMenu()">
+  <div class="menu" id="menu">
+    <img class="logo" src="./logo.png" alt="">
+    <button onclick="startGame()">Jugar</button>
+    <button onclick="showHelp()">Ayuda</button> <!-- Nuevo botón de ayuda -->
+  </div>
+
+  <div class="help-container" id="help" style="display: none;">
+    <h2>¿Cómo jugar al Blackjack?</h2>
+    <p>
+      El objetivo del Blackjack es tener una mano de cartas cuyo valor sea lo más cercano a 21 posible, sin pasarse. 
+      El valor de las cartas es el siguiente: 
+      - Las cartas numeradas (2-10) tienen su valor nominal.
+      - Las cartas con figuras (Rey, Reina, Jota) valen 10 puntos.
+      - El As puede valer 1 o 11 puntos, según convenga.
+    </p>
+    <p>
+      Durante el juego, puedes pedir cartas para acercarte a 21 o plantarte para quedarte con las cartas que tienes. 
+      El dealer también jugará y el que tenga más puntos sin pasarse de 21 ganará.
+    </p>
+    <button onclick="showMenu()">Volver al menú</button> <!-- Botón para volver al menú -->
+  </div>
+
+  <div class="game-container" id="game" style="display: none;">
+    <div id="dealer-section">
+      <h2>Dealer</h2>
+      <div id="dealer-cards" class="card-row"></div>
     </div>
 
+    <div id="player-section">
+      <h2>Jugador</h2>
+      <div id="player-cards" class="card-row"></div>
+    </div>
+
+    <div class="buttons">
+      <button onclick="hit()">Pedir carta</button>
+      <button onclick="stand()">Plantarse</button>
+      <button onclick="showMenu()">Volver al menú</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,44 +1,87 @@
-@font-face {
-    font-family:"blackjack";
-    src: url("../fuentes/BLACKJAR.TTF");
-}
+body {
+    background-color: darkgreen;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
 
+  
+  .logo{
+    width: 700px;
+    position: relative;
+    left: 50px;
+  }
 
-.Logo .img{
-    position: absolute;
-    left: 550px;
-    width: 690px;
-    height: 353,5;
-}
-
-.botones {
-    position: absolute;
-    top: 450px;
-    left: 770px;
-    width: 240px;
-    height: 200px;
-    display: grid;
+  /* Animación para los botones */
+  button {
+    display: flex;
     flex-wrap: wrap;
-
-}
-
-.jugar{
-    font-family: "blackjack";
-    font-size: 30px;
-    border-radius: 100%;
-    background-color: #daa51e;
-    border: 0;
-    color: white;
-}
-
-.ayuda{
-    font-family: "blackjack";
-    font-size: 30px;
-    background-color: #daa51e;
-    border: 0;
-    color: white;
-    margin-top: 30px;
-    border-radius: 100%;
-}
-
-
+    margin-bottom: 10px;
+    gap: 50px;
+    justify-content: center;
+    position: relative;
+    left: 950px;
+    top: 100px;
+    background-color: gold;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: orange;
+    transform: scale(1.1);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  /* Animación para las cartas */
+  .card-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+    opacity: 0; /* Iniciar invisibles */
+    animation: fadeIn 0.5s forwards; /* Aparecer con una animación */
+  }
+  
+  .card-row img {
+    width: 100px;
+    border-radius: 8px;
+    animation: cardAnimation 1s ease-out;
+  }
+  
+  /* Animación de aparición de las cartas */
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes cardAnimation {
+    0% {
+      transform: scale(0) rotate(90deg);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1) rotate(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Animación de los botones cuando se hacen clic */
+  button:focus {
+    outline: none;
+  }
+  
