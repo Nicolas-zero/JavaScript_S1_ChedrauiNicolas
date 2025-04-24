@@ -1,0 +1,44 @@
+@font-face {
+    font-family:"blackjack";
+    src: url("../fuentes/BLACKJAR.TTF");
+}
+
+
+.Logo .img{
+    position: absolute;
+    left: 550px;
+    width: 690px;
+    height: 353,5;
+}
+
+.botones {
+    position: absolute;
+    top: 450px;
+    left: 770px;
+    width: 240px;
+    height: 200px;
+    display: grid;
+    flex-wrap: wrap;
+
+}
+
+.jugar{
+    font-family: "blackjack";
+    font-size: 30px;
+    border-radius: 100%;
+    background-color: #daa51e;
+    border: 0;
+    color: white;
+}
+
+.ayuda{
+    font-family: "blackjack";
+    font-size: 30px;
+    background-color: #daa51e;
+    border: 0;
+    color: white;
+    margin-top: 30px;
+    border-radius: 100%;
+}
+
+
