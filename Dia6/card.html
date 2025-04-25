@@ -9,9 +9,15 @@
 </head>
 <body onload="showMenu()">
   <div class="menu" id="menu">
-    <img class="logo" src="./logo.png" alt="">
-    <button onclick="startGame()">Jugar</button>
-    <button onclick="showHelp()">Ayuda</button> <!-- Nuevo botón de ayuda -->
+    <img class="logo" src="./imagenes/logonuevo.png" alt="">
+    <img class="mesa" src="./imagenes/mesa.png" alt="">
+    <img class="monedas" src="./imagenes/monedas.png" alt="">
+    <img class="monedas2" src="./imagenes/monedas.png" alt="">
+
+
+
+    <button class="jugar" onclick="startGame()">Jugar</button>
+    <button class="ayuda" onclick="showHelp()">Ayuda</button> 
   </div>
 
   <div class="help-container" id="help" style="display: none;">
@@ -42,9 +48,9 @@
     </div>
 
     <div class="buttons">
-      <button onclick="hit()">Pedir carta</button>
-      <button onclick="stand()">Plantarse</button>
-      <button onclick="showMenu()">Volver al menú</button>
+      <button class="pedir" onclick="hit()">Pedir carta</button>
+      <button class="Plantarse" onclick="stand()">Plantarse</button>
+      <button class="menu" onclick="showMenu()">Volver al menú</button>
     </div>
   </div>
 
