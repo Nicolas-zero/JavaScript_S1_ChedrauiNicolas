@@ -51,6 +51,7 @@ button{
     padding-left: 15px;
     padding-right: 10px;
 }
+/* Capsula positiva*/
 .terminado img{
     margin-left: 20px;
     margin-right: 10px;
@@ -72,6 +73,7 @@ button{
     align-items: center;
     flex-direction: column;
 }
+
 .capsula{
     padding-top: 3px;
     padding-bottom: 3px;
@@ -90,4 +92,35 @@ button{
 .botones{
     display: flex;
 }
-
+/* Capsula negativa*/
+.terminadoNegativa img{
+    margin-left: 20px;
+    margin-right: 10px;
+    width: 50px;
+    background-color: rgba(255, 255, 255, 0.362);
+    border-radius: 100px;
+}
+.eliminadoNegativa img{
+    width: 50px;
+    background-color: rgba(255, 255, 255, 0.362);
+    border-radius: 100px;
+}
+.capsulaNegativa{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    color: rgba(255, 255, 255, 0.362);
+    background-color: #14191d;
+    border-radius: 30px;
+    max-width: 80%;
+}
+.infoTextNegativa p{
+    margin-top: 10px;
+    font-size: 30px;
+    text-decoration: line-through;
+}
+.botonesNegativa{
+    display: flex;
+}

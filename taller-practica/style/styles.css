@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "fuente";
+    src: url("../storage/fonts/Lato-Regular.ttf");
+}
+
+div{
+    margin: 0;
+    padding: 0;
+    border-color: #eaeaea;
+    margin-top: 10px;
+    margin-left: 300px;
+    margin-right: 300px;
+
+}
+
+header{
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding-left: 20px;
+    padding-top: 5px;
+    border-color: #eaeaea;
+}
+.titulo{
+    font-family: "fuente",sans-serif;
+    position: relative;
+    top: -10px;
+}
+
+h1{
+    font-family: "fuente",sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+p{
+    font-family: "fuente",sans-serif;
+}
+
+.opciones{
+    margin-left: 20px;
+}
