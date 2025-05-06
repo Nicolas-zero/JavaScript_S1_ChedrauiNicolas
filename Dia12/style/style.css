@@ -1,0 +1,61 @@
+@import url(./variables.css);
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'fuente';
+}
+h2{
+    color:white
+}
+.search_section{
+    background-color: var(--color-1);
+    padding: 30px;
+    text-align: center;
+    
+}
+.search_section h2{
+    margin-bottom: 5px;
+    font-size: 40px;
+
+}
+#description{
+    color: rgb(225, 225, 225);
+}
+.search_bar input{
+    margin-top: 20px;
+    border: 1px solid var(--color-3);
+    width: 90%;
+    color: var(--color-2);
+    height: 40px;
+    border-radius: 20px;
+    font-size: 15px;
+    padding-left: 20px;
+}
+.people_menu{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    gap: 20px;
+    border: 1px solid var(--color-1);
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.foto img{
+    width: 85px;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-left: 35px;
+}
+.information{
+    margin-top: 18px;
+}
+.information h3{
+    font-size: 25px;
+    color: var(--color-2);
+}
+.information p{
+    margin-top: 5px;
+    color: var(--color-2);
+}

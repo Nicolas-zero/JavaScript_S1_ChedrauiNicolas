@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CRUD con MockAPI y Axios</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./style/style.css">
+    <title>La Libreta</title>
 </head>
-<body class="container mt-5">
+<body>
+    <header class="search_section">
+        <h2>Live User Filter</h2>
+        
+        <span id="description">Search by name and/or location</span>
+        <nav class="buscador">
+            <div class="search_bar">
+                <input id="input_search" type="text" placeholder="Search" >
+            </div>
+        </nav>
+    </header>
+    <main class="main">
 
-  <h2 class="mb-4">CRUD con MockAPI y Axios</h2>
-
-  <form id="user-form" class="mb-3">
-    <input type="text" id="name" class="form-control mb-2" placeholder="Nombre" required />
-    <input type="email" id="email" class="form-control mb-2" placeholder="Email" required />
-    <button type="submit" class="btn btn-primary" id="submit-btn">Agregar</button>
-  </form>
-
-  <ul class="list-group" id="user-list"></ul>
-
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <script src="./script/script.js"></script>
+    </main>
 </body>
+<script type="module" src="./script/main.js"></script>
 </html>
