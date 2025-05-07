@@ -69,6 +69,7 @@ select {
     grid-column: span 2;
     font-size: 0.9em;
     color: gray;
+    margin-left: 420px;
 }
 
 .productora {
