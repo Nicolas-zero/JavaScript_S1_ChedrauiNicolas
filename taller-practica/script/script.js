@@ -38,14 +38,14 @@ window.addEventListener("DOMContentLoaded", () => {
         nuevoTraje.innerHTML = `
             <p class="subtitulo">Nombre traje</p>
             <input type="text">
-            <button class="eliminar-traje">-</button>
+            <button id="eliminar">-</button>
         `;
 
         // Insertarlo antes del botón "+"
         registroTrajes.insertBefore(nuevoTraje, btnAgregarTraje.nextSibling);
 
         // Evento para eliminar el traje
-        nuevoTraje.querySelector(".eliminar-traje").addEventListener("click", () => {
+        nuevoTraje.querySelector("#eliminar").addEventListener("click", () => {
             nuevoTraje.remove();
         });
     });

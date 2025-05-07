@@ -1,0 +1,82 @@
+.caja{
+    border: 1px solid,#eaeaea;
+    margin-top: 10px;
+    margin-left: 500px;
+    margin-right: 500px;
+    border-radius: 10px;
+}
+
+header{
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding-left: 20px;
+    padding-top: 10px;
+    border: 1px solid,#eaeaea;
+}
+
+h1{
+    text-align: center;
+margin-top: 1px;
+}
+
+.contenido{
+    margin-bottom: auto;
+}
+
+.flecha{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+#flechaL{
+    margin-top: 50px;
+    border: 1px solid;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(97, 181, 230);
+    color: white;
+    margin-right: 350px;
+    margin-bottom: 80px;
+}
+
+#flechaR{    
+    margin-top: 50px;
+    border: 1px solid;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(97, 181, 230);
+    color: white;
+    margin-left: 350px;
+    margin-bottom: 80px;
+}
+
+.imagenes{
+    display: grid;
+    grid-template-columns: 1fr;
+    position: absolute;
+    top: 130px;
+    left: 930px;
+}
+
+#imagen{
+    margin-bottom: 150px;
+}
+
+.boton{
+    margin-bottom: 10px;
+    margin-left: 420px;
+    margin-top: 1px;
+}
+
+#nuevo{
+    background-color: #007bff;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    height: 30px;
+}
