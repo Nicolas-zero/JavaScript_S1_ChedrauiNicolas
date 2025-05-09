@@ -1,0 +1,46 @@
+.header-layout {
+    padding: .5em 1em;
+    background-color: #1a8dc8;
+    color: #fff;
+    height: 50px;
+    position: fixed;
+    transition: top .3s ease-in-out, left .3s ease-in-out, right .3s ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.logomascota{
+    width: 100px;
+    height: auto;
+    position: relative;
+    top: -23px;
+    margin-left: 360px;
+}
+
+#q{
+    position: relative;
+    margin-left: 50px;
+    top: -70px;
+    height: 30px;
+    border: 2px solid,#69bbe4;
+}
+
+#boton{
+    position: relative;
+    top: -70px;
+    left: -4px;
+    height: 36px;
+    background-color: #69bbe4;
+    border: 1px none,#69bbe4;
+    color: white;
+    
+}
+
+.main-content{
+    border: 1px solid;
+    margin-top: 62px;
+    margin-left: 370px;
+    margin-right: 370px;
+}
