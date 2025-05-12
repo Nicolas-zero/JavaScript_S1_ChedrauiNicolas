@@ -1,6 +1,6 @@
 // 🔐 Claves de API
 const clientId = "fYGGj20Afgl8oTdYjLnysXbsUGZS7mGdFCjKv2PEaGyc5Lsqn8";
-const clientSecret = "fYGGj20Afgl8oTdYjLnysXbsUGZS7mGdFCjKv2PEaGyc5Lsqn8";
+const clientSecret = "t1TcBNocJeuT9oKwONWO6QoFn3Fw41OQ16JVDE1o";
 
 let accessToken = "";
 let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
@@ -35,7 +35,7 @@ document.getElementById("volver").addEventListener("click", () => {
 // Obtener token de acceso
 async function obtenerToken() {
   try {
-    const res = await fetch("https://api.petfinder.com/v2/oauth2/ fYGGj20Afgl8oTdYjLnysXbsUGZS7mGdFCjKv2PEaGyc5Lsqn8", {
+    const res = await fetch('https://api.petfinder.com/v2/oauth2/token', {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: `grant_type=client_credentials&client_id=${clientId}&client_secret=${clientSecret}`
