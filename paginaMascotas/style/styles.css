@@ -1,46 +1,174 @@
+/* Estilos Generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f9fc;
+}
+
+/* Header */
 .header-layout {
-    padding: .5em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
     background-color: #1a8dc8;
     color: #fff;
-    height: 50px;
     position: fixed;
-    transition: top .3s ease-in-out, left .3s ease-in-out, right .3s ease-in-out;
+    width: 100%;
     top: 0;
-    left: 0;
-    right: 0;
     z-index: 10;
 }
 
-.logomascota{
+.logomascota {
     width: 100px;
     height: auto;
-    position: relative;
-    top: -23px;
-    margin-left: 360px;
+    margin-right: 1rem;
 }
 
-#q{
-    position: relative;
-    margin-left: 50px;
-    top: -70px;
-    height: 30px;
-    border: 2px solid,#69bbe4;
+#q {
+    height: 35px;
+    padding: 0 10px;
+    border: 2px solid #69bbe4;
+    border-radius: 4px;
+    margin-right: 8px;
+    width: 250px;
 }
 
-#boton{
-    position: relative;
-    top: -70px;
-    left: -4px;
-    height: 36px;
+#boton {
+    height: 37px;
+    padding: 0 15px;
     background-color: #69bbe4;
-    border: 1px none,#69bbe4;
+    border: none;
+    border-radius: 4px;
     color: white;
-    
+    cursor: pointer;
 }
 
-.main-content{
-    border: 1px solid;
-    margin-top: 62px;
-    margin-left: 370px;
-    margin-right: 370px;
+#boton:hover {
+    background-color: #57aad3;
+}
+
+/* Navegación */
+.nav-layout {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    gap: 1rem;
+}
+
+.nav-layout button {
+    background-color: #69bbe4;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.nav-layout button:hover {
+    background-color: #4aa1c3;
+}
+
+/* Contenido Principal */
+.main-content {
+    padding: 1em;
+    margin-top: 20px;
+}
+
+/* Secciones */
+.section-container {
+    margin-top: 1em;
+}
+
+/* Grid de Mascotas */
+.mascotas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* Tarjeta de Mascota */
+.mascota-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.mascota-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.mascota-card h3 {
+    margin: 0.5em 0 0.2em;
+}
+
+.mascota-card p {
+    margin: 0.2em 0;
+    color: #555;
+}
+
+/* Botón de Detalles y Favoritos */
+.mascota-card button {
+    margin-top: 0.5rem;
+    padding: 0.4em 0.8em;
+    background-color: #1a8dc8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.mascota-card button:hover {
+    background-color: #1473a4;
+}
+
+.favorito-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: white;
+    border: none;
+    font-size: 1.2rem;
+    color: red;
+    cursor: pointer;
+}
+
+/* Vista Detalle */
+.detalle-container {
+    background-color: #ffffff;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#volver {
+    margin-bottom: 1em;
+    background-color: #ccc;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .header-layout {
+        flex-direction: column;
+    }
+
+    #q {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .nav-layout {
+        flex-direction: column;
+        align-items: center;
+    }
 }

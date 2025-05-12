@@ -1,21 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/styles.css">
-    <title>PacoPets </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="./style/styles.css" />
+  <title>PacoPets</title>
 </head>
 <body>
-    <header class="header-layout">
-        <img class="logomascota" src="./storage/img/logomascota.png" alt="">
-        <input name="q" id="q" data-js-selector="q" autocomplete="off" class="input text search" placeholder="¿Qué estás buscando?">
-        <button id="boton">Buscar</button>
-        </header>
-    
-        <main class="main-content">
-            <p>holiiii</p>
-        </main>
+  <header class="header-layout">
+    <img class="logomascota" src="./storage/img/logomascota.png" alt="Logo PacoPets" />
+    <input
+      name="q"
+      id="q"
+      data-js-selector="q"
+      autocomplete="off"
+      class="input text search"
+      placeholder="¿Qué estás buscando?"
+    />
+    <button id="boton">Buscar</button>
+  </header>
+
+  <nav class="nav-layout">
+    <button id="ver-resultados">Mascotas</button>
+    <button id="ver-favoritos">Favoritos</button>
+  </nav>
+
+  <main class="main-content">
+    <!-- Vista de resultados -->
+    <section id="results" class="section-container">
+      <h2>Resultados</h2>
+      <div id="mascotas-container" class="mascotas-grid"></div>
+    </section>
+
+    <!-- Vista de favoritos -->
+    <section id="favorites" class="section-container" style="display: none;">
+      <h2>Favoritos</h2>
+      <div id="favoritos-container" class="mascotas-grid"></div>
+    </section>
+
+    <!-- Vista de detalle -->
+    <section id="details-view" class="section-container" style="display: none;">
+      <button id="volver">← Volver</button>
+      <div id="detalle-mascota" class="detalle-container"></div>
+    </section>
+  </main>
+
+  <script src="./script/script.js"></script>
 </body>
-<script src="./script/script.js"></script>
 </html>
